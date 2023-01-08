@@ -1,0 +1,56 @@
+
+nav {
+
+position: sticky;
+background-color: #8080808c;
+top:0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px 0 10px;
+z-index: 1;
+
+}
+
+.pages{
+    display:  flex;
+    align-items: center;
+    
+}
+
+ul {
+    display:flex;
+    list-style:  none;
+    margin:0px;
+}
+li{
+    display: inline-block;
+    padding: 25px 10px 25px 10px;
+   
+}
+
+li:hover{
+    color: white;
+    cursor: pointer;
+    
+    background-color: #808080de;
+}
+
+
+
+
+.logo:hover{
+    color: white;
+    cursor: pointer;
+
+}
+
+input{
+    height: 20px;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

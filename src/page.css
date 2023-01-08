@@ -1,0 +1,30 @@
+.page-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    
+}
+
+.page-text{
+display: flex;
+flex-direction: column;
+margin-left: 50px;
+max-width: 500px;
+}
+
+.page-img{
+
+    width: 20%;
+    height: auto;
+ 
+    
+}
+
+.page-text button{
+    margin-top: 50px;
+    width: 100px;
+    height: 50px;
+}
