@@ -10,7 +10,13 @@ function Navbar(){
             <div className="pages">
                 <ul>
                 <Link to='/'><li> Home </li></Link>
-                    <li> Categories </li>
+                    <li class="categories"> Categories 
+                    <ul class="dropdown">
+                        <li>category 1</li>
+                        <li>category 2</li>
+                        <li>category 3</li>
+                    </ul>
+                    </li>
                     <li> My Cart </li>
                 
                 </ul>
