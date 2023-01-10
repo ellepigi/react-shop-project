@@ -10,7 +10,6 @@ export default function Home(){
     const [products, setProducts] = useState([]);
 
 
-
     const fetchData = () => {
       return axios.get("https://fakestoreapi.com/products")
             .then((response) => setProducts(response.data));
