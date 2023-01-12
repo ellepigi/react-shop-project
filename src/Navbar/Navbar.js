@@ -33,7 +33,7 @@ function Navbar(){
                     <ul class="dropdown">
 
                        {categories.map ((category, index) => 
-                        <Link key={index} to={`/categories/${category}`} state={category}> <li>{category}</li>
+                        <Link  key={index} to ={`/categories/${category}`} state={category}  > <li>{category}</li>
                         </Link>
                                             )}
                       

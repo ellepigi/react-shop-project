@@ -1,7 +1,7 @@
 import "./Categories.css"
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {Link, Route, Routes, useLocation } from 'react-router-dom';
+import {Link, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import Page from "./Page.js"
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
@@ -11,6 +11,10 @@ export default function Categories(){
 
   
     const location = useLocation();
+    useEffect(() => {
+        fetchData()
+      }, [location.key])
+
     const category = location.state;
     console.log(category)
 
@@ -29,7 +33,9 @@ export default function Categories(){
     },[]) 
 
     
-    
+
+  
+
 
 
 

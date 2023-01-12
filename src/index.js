@@ -23,7 +23,7 @@ root.render(
 
     <Route exact path='/products/:id' element={<Page/>} />
 
-    <Route exact path='/categories/:id' element={<Categories/>}></Route>
+    <Route exact path='/categories/:id'  element={<Categories/>}></Route>
     </Routes>
   
     {/* <App /> */}
