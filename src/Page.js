@@ -3,7 +3,7 @@ import Navbar from './Navbar/Navbar';
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from 'react-router-dom';
-import Footer from "./footer";
+import Footer from "./Footer";
 
 
 

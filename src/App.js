@@ -5,7 +5,7 @@ import axios from "axios";
 import Page from './Page';
 import { BrowserRouter, Route, Link, Routes  } from 'react-router-dom';
 import Home from './Home';
-import Footer from './footer.js'
+import Footer from './Footer.js'
 
 
 

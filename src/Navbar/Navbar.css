@@ -69,18 +69,21 @@ a{
 }
 
 .dropdown li{
-    background-color: black;
+    background-color: #8080808c;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     
 }
 
-ul li:hover > ul,
+.dropdown li:hover {
+background-color: #808080de;
+}
+
+.categories:hover > ul,
     ul li ul:hover{
     visibility:  visible;
 }
-
 
 
 
