@@ -4,7 +4,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from 'react-router-dom';
 import Footer from "./Footer";
-
+import { useCart } from "react-use-cart";
 
 
 
@@ -18,6 +18,7 @@ function Page (){
   const data = location.state;
   console.log(data)
 
+  const { addItem }=  useCart()
 
 
 return(
@@ -35,7 +36,7 @@ return(
         <h3>{data.price} $</h3>
         <h5>Rating: {data.rating.rate}</h5>
         <p>{data.description}</p>
-        <button>Add to cart</button>
+        <button onClick={()=>addItem(data)}>Add to cart</button>
       </div>
     </div>
 <Footer />
