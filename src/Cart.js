@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './Navbar/Navbar'
 import Footer from './Footer'
 import { useCart } from 'react-use-cart'
+import './Cart.css'
+
 
 export default function Cart() {
 
@@ -25,12 +27,13 @@ const { isEmpty,
 <h1>Price: {cartTotal} $</h1>
 <h1> Products </h1>
 <div>
-{items.map((item, index)=>{
+{items.map((item, index)=>
   <div key={index}>
   <h1>{item.title}</h1>
-  <img src={item.img}></img>
+  <img className="cart-img" src={item.image} />
+  <p>{item.price}</p>
 </div>
-})}
+)}
 </div>
 
 <Footer></Footer>
