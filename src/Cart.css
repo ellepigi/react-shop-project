@@ -13,8 +13,7 @@
     display: flex;
     gap: 20px;
     margin-bottom: 30px;
-    box-shadow: 5px 5px 15px 5px #000000;
-
+    box-shadow: 1px 0px 15px 3px rgba(0,0,0,0.49);
 }
 
 .cart-buttons{
@@ -25,3 +24,32 @@
 .cart-item-title{
     margin-top: 0px;
 }
+
+.quantity-buttons {
+    height:2rem;
+    width: 2rem;
+    background-color: #7f7ff7;
+    color: white;
+    border: none;
+}
+
+
+.quantity-buttons:hover{
+    cursor: pointer;
+    background-color: #6868fc;
+  }
+
+  .remove-item {
+    
+    background-color: #7f7ff7;
+    color: white;
+    border: none;
+}
+
+
+.remove-item:hover{
+    cursor: pointer;
+    background-color: #6868fc;
+  }
+  
+  

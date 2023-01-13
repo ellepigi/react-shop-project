@@ -37,9 +37,9 @@ const { isEmpty,
   <h5>{item.price} $</h5>
   <p>x{item.quantity}</p>
   <div className='cart-buttons'>
-  <button  onClick={()=>updateItemQuantity(item.id, item.quantity +1)}>+</button>
+  <button className='quantity-buttons' onClick={()=>updateItemQuantity(item.id, item.quantity +1)}>+</button>
 
-    <button  onClick={()=>updateItemQuantity(item.id, item.quantity -1)}>-</button>
+    <button className='quantity-buttons' onClick={()=>updateItemQuantity(item.id, item.quantity -1)}>-</button>
   <button className='remove-item' onClick={()=>removeItem(item.id)}>Remove Item</button>
   </div>
   </div>
