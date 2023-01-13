@@ -29,8 +29,8 @@ function Navbar(){
             <div className="pages">
                 <ul>
                 <Link to='/'><li> Home </li></Link>
-                    <li class="categories"> Categories 
-                    <ul class="dropdown">
+                    <li className="categories"> Categories 
+                    <ul className="dropdown">
 
                        {categories.map ((category, index) => 
                         <Link  key={index} to ={`/categories/${category}`} state={category}  > <li>{category}</li>
@@ -43,7 +43,7 @@ function Navbar(){
                         
                     </ul>
                     </li>
-                    <li> My Cart </li>
+                    <Link to="/cart"><li> My Cart </li></Link>
                 
                 </ul>
                 <input placeholder="Search for products..."></input>

@@ -7,12 +7,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from "./Home.js"
 import Page from "./Page.js"
 import Categories from "./Categories.js"
-
+import Cart from './Cart';
+import { CartProvider } from 'react-use-cart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
+    <CartProvider>
     <BrowserRouter>
     
     <Routes>
@@ -24,10 +26,13 @@ root.render(
     <Route exact path='/products/:id' element={<Page/>} />
 
     <Route exact path='/categories/:id'  element={<Categories/>}></Route>
+
+    <Route exact path='/cart' element={<Cart></Cart>}/>
     </Routes>
   
     {/* <App /> */}
     </BrowserRouter>
+    </CartProvider>
   </React.StrictMode>
 
 );
