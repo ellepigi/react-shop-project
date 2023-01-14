@@ -5,6 +5,7 @@ import {Link, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import Page from "./Page.js"
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
+import { useCart } from "react-use-cart";
 
 
 export default function Categories(){
@@ -33,6 +34,7 @@ export default function Categories(){
     },[]) 
 
     
+    const { addItem }=  useCart()
 
   
 
@@ -59,7 +61,7 @@ export default function Categories(){
           
           <Link   to={`/products/${product.title}`} state={product}><h3  id='card-title'>{product.title}</h3></Link>
           <button  id="price">{product.price} $</button>
-          <button type="button" id="buy">Add to cart</button>
+          <button type="button" id="buy" onClick={()=>addItem(product)}>Add to cart</button>
           </div>)}
           </div>
       </div>

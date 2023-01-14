@@ -45,6 +45,7 @@ const { isEmpty,
   </div>
 </div>
 )}
+<button className='empty-cart' onClick={()=>emptyCart()}>Empty Cart</button>
 </div>
 </div>
 

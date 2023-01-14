@@ -1,5 +1,6 @@
 .cart-body{
     margin-left: 30px;
+    padding-bottom: 50px;
 }
 .cart-img {
     height: 100%;
@@ -56,4 +57,14 @@ bottom: 20px;
     background-color: #6868fc;
   }
   
-  
+.empty-cart{
+    font-size: 2rem;   
+    padding: 0.5rem; 
+    background-color: #7f7ff7;
+    color: white;
+    border: none;
+}
+.empty-cart:hover{
+    cursor: pointer;
+    background-color: #6868fc;
+  }
