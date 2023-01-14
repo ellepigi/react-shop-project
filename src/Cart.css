@@ -7,6 +7,7 @@
 }
 
 .cart-card {
+    position: relative;
     height: 200px;
     margin-right:20px;
     padding: 10px;
@@ -17,8 +18,11 @@
 }
 
 .cart-buttons{
+
     display: flex;
     gap: 10px;
+position:absolute;
+bottom: 20px;    
 }
 
 .cart-item-title{
