@@ -2,6 +2,7 @@ import "./Navbar.css"
 import { Link } from "react-router-dom"
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useCart } from "react-use-cart";
 
 
 
@@ -21,7 +22,7 @@ function Navbar(){
       fetchData();
     },[]) 
 
-
+  const { totalUniqueItems } = useCart()
 
     return(
         <nav>
@@ -43,7 +44,7 @@ function Navbar(){
                         
                     </ul>
                     </li>
-                    <Link to="/cart"><li> My Cart </li></Link>
+                    <Link to="/cart"><li id="my-cart"> My Cart <span>{totalUniqueItems}</span></li></Link>
                 
                 </ul>
                 <input placeholder="Search for products..."></input>

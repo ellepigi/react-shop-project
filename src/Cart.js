@@ -16,13 +16,25 @@ const { isEmpty,
   emptyCart,
   items } = useCart()
 
-
-
+  if (isEmpty) {
+    return (
+    <>
+    <Navbar></Navbar>
+    <div className='empty-cart-body'>
+    <h1 >Your cart is empty</h1>
+    </div>
+    <Footer></Footer>
+    </>
+    )
+    
+  }
+  
 
 
   return (
 <>
 <Navbar></Navbar>
+
 <div className='cart-body'>
 <h1>Price: {cartTotal} $</h1>
 <h1> Products </h1>

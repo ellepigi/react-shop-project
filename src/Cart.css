@@ -1,6 +1,15 @@
 .cart-body{
     margin-left: 30px;
     padding-bottom: 50px;
+    min-height: 80vh;
+}
+.empty-cart-body{
+    margin-left: 30px;
+    padding-bottom: 50px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cart-img {
     height: 100%;
@@ -68,3 +77,4 @@ bottom: 20px;
     cursor: pointer;
     background-color: #6868fc;
   }
+

@@ -86,9 +86,24 @@ background-color: #808080de;
     visibility:  visible;
 }
 
+#my-cart{
+    position: relative;
+}
 
-
-
+#my-cart span{
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.6rem;
+}
 
 
 

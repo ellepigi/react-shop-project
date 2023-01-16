@@ -9,16 +9,19 @@ import { useCart } from "react-use-cart";
 export default function Home(){
 
     const [products, setProducts] = useState([]);
-
+    const [loading, setLoading] = useState(false)
 
     const fetchData = () => {
+
       return axios.get("https://fakestoreapi.com/products")
             .then((response) => setProducts(response.data));
             
   
     }
+    
   
     useEffect(() => {
+
       fetchData();
     },[]) 
 
