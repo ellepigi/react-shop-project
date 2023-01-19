@@ -30,7 +30,7 @@ root.render(
     <Route exact path='/cart' element={<Cart></Cart>}/>
     </Routes>
   
-    {/* <App /> */}
+    <App />
     </BrowserRouter>
     </CartProvider>
   </React.StrictMode>
