@@ -2,11 +2,9 @@ import "./Categories.css"
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {Link, Route, Routes, useLocation, useParams } from 'react-router-dom';
-import Page from "./Page.js"
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
-import { useCart } from "react-use-cart";
-
+import Card from "./Card/Card";
 
 export default function Categories(){
 
@@ -20,11 +18,15 @@ export default function Categories(){
     console.log(category)
 
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
 
     const fetchData = () => {
-      return axios.get(`https://fakestoreapi.com/products/category/${category}`)
-            .then((response) => setProducts(response.data));
+      return  axios.get(`https://fakestoreapi.com/products/category/${category}`)
+            .then((response) => {setProducts(response.data);
+            setLoading(false)})
+            
+
             
   
     }
@@ -34,40 +36,36 @@ export default function Categories(){
     },[]) 
 
     
-    const { addItem }=  useCart()
-
-  
+  if(loading){
+    return (
+      <div className="loading-container">
+          <h3>Loading...</h3>
+        </div>
+    )
+  }
 
 
 
 
     return(
-        <>
-      <Navbar></Navbar>
-        <div className="App">
+    
       
+      
+        <>
+        <div className="App">
+        
 
 
       <div className='body'>
         <h1 id="page-title">{category}</h1>
         <div className='container'>
-        {products.map((product, index) => <div className='card' key={index}>
-        
-        {/* <Link to={`/products/${product.title}`} state={product}> */}
-          <img id="card-img" src={product.image} />
-        {/* </Link> */}
-            
-          
-          
-          <Link   to={`/products/${product.title}`} state={product}><h3  id='card-title'>{product.title}</h3></Link>
-          <button  id="price">{product.price} $</button>
-          <button type="button" id="buy" >Add to cart</button>
-          </div>)}
+        {products.map((product, index) => 
+        < Card key={index} product={product} />
+        )}
           </div>
       </div>
 
     </div>
-    <Footer></Footer>
     </>
     )
 

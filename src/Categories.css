@@ -21,7 +21,7 @@
   
   }
   
-  .card {
+  /* .card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -32,46 +32,16 @@
   overflow: hidden;
   padding: 5px;
 
-  }
+  } */
   
-  #price{
-    background-color: white;
-    padding: 5px;
-    
-    border: 1px solid grey;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-weight: 600;
-  
-  }
-  
+
   
    
-  #card-img{
-    height:100px;
-    width: 80px;
-    padding-top: 10px;
-    
-  }
+  
 
  
   
   
-  #buy{
-    position: absolute;
-    bottom: 0px;
-    width:100%;
-    color: white;
-    font-size: 1rem;
-    background-color: #7f7ff7;
-    border:none;
-    height: 50px;
-  }
-  
-  #buy:hover{
-    cursor: pointer;
-    background-color: #6868fc;
-  }
+
   
   

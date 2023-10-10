@@ -19,11 +19,9 @@ const { isEmpty,
   if (isEmpty) {
     return (
     <>
-    <Navbar></Navbar>
     <div className='empty-cart-body'>
     <h1 >Your cart is empty</h1>
     </div>
-    <Footer></Footer>
     </>
     )
     
@@ -33,12 +31,9 @@ const { isEmpty,
 
   return (
 <>
-<Navbar></Navbar>
 
 <div className='cart-body'>
-<h1>Price: {cartTotal} $</h1>
 <h1> Products </h1>
-<div>
 {items.map((item, index)=>
   <div className="cart-card" key={index}>
     <div>
@@ -57,10 +52,11 @@ const { isEmpty,
   </div>
 </div>
 )}
+<div className='total'>
 <button className='empty-cart' onClick={()=>emptyCart()}>Empty Cart</button>
+<h2>Total: {cartTotal} $</h2>
 </div>
 </div>
 
-<Footer></Footer>
 </>  )
 }

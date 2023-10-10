@@ -6,8 +6,8 @@ import { Link } from "react-router-dom"
 function Footer(){
     return(
         <footer>
-          <h1>Faq</h1>
-          <h1>Informations</h1>
+          <h3>Faq</h3>
+          <h3>Informations</h3>
         </footer>
     )
 }

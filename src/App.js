@@ -1,11 +1,12 @@
 import './App.css';
 import Navbar from './Navbar/Navbar';
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import Page from './Page';
 import { BrowserRouter, Route, Link, Routes  } from 'react-router-dom';
 import Home from './Home';
 import Footer from './Footer.js'
+import Cart from './Cart';
+import Categories from './Categories';
 
 
 
@@ -13,38 +14,35 @@ function App() {
 
 
 
-
-  // const [products, setProducts] = useState([]);
-
-
-
-  // const fetchData = () => {
-  //   return axios.get("https://fakestoreapi.com/products")
-  //         .then((response) => setProducts(response.data));
-          
-
-  // }
-
-  // useEffect(() => {
-  //   fetchData();
-  // },[]) 
- 
-
-  
- 
   return (
+    <BrowserRouter>
+
      <>
          
+<Navbar></Navbar>
+    <Routes>
+
+    <Route exact path='/' element={<Home/>} />
+
+    <Route exact path='/products/:id' element={<Page/>} />
+
+    <Route exact path='/categories/:id'  element={<Categories/>}/>
+
+    <Route exact path='/cart' element={<Cart></Cart>}/>
+
+    </Routes>
+
+    
+  
+<Footer></Footer>    
 
 
-<Navbar ></Navbar>
-<Home></Home>
-<Footer></Footer>     
+
    
 
-
-
     </>
+    </BrowserRouter>
+
   );
 }
 
