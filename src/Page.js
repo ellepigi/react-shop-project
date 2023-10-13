@@ -26,7 +26,6 @@ return(
 
     
  <>
- <Navbar />
      <div className="page-container">
   
       <img className="page-img" src={data.image} alt={data.title} />
@@ -39,7 +38,6 @@ return(
         <button onClick={()=>addItem(data)}>Add to cart</button>
       </div>
     </div>
-<Footer />
     </>
 
  );
