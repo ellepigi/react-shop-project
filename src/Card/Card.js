@@ -19,8 +19,8 @@ import { AiFillStar } from 'react-icons/ai'
            <h3>{shortTitle}</h3>
            </Link>
            <div className="card-text">
-           <h4 className="price">{props.product.price} $</h4>
-           <h4>{props.product.rating.rate} <AiFillStar></AiFillStar></h4>
+           <h5 className="price">{props.product.price} $</h5>
+           <h5>{props.product.rating.rate} <AiFillStar></AiFillStar></h5>
            </div>
            <button type="button" className="button" onClick={()=> addItem(props.product)}>Add to cart</button>
             

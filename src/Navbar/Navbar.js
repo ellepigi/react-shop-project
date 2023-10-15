@@ -4,6 +4,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useCart } from "react-use-cart";
 import { FaShoppingCart } from "react-icons/fa";
+import { IoIosArrowDown } from 'react-icons/io'
 
 
 function Navbar(){
@@ -30,7 +31,7 @@ function Navbar(){
 
                 <ul>
                 <Link to='/'><li> Home </li></Link>
-                    <li className="categories"> Categories 
+                    <li className="categories"> Categories <IoIosArrowDown></IoIosArrowDown>
                     <ul className="dropdown">
 
                        {categories.map ((category, index) => 

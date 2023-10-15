@@ -28,8 +28,8 @@
     display: flex;
     gap: 50px;
     margin-bottom: 30px;
-    border: 2px solid #c2bdbd70;
-    border-radius: 10px;
+    border-bottom: 2px solid #c2bdbd70;
+   
 }
 
 .cart-buttons{

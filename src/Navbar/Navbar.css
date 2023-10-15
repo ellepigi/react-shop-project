@@ -105,6 +105,12 @@ background-color: #808080de;
     font-size: 0.6rem;
 }
 
+.categories{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
 
 @media screen and (max-width: 600px) {
     
